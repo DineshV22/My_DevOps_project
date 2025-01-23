@@ -1,13 +1,12 @@
 pipeline {
     agent 
     
-
-
-        environment {
+     environment {
         // Add environment variables if needed
         REGISTRY = 'docker.io'                                // DockerHub registry
         REPO = 'https://hub.docker.com/repositories/dinesh2001v'                 // Your DockerHub repo
         IMAGE = "${REGISTRY}/${REPO}:${env.BUILD_NUMBER}"    // Full Docker image tag
+     }
 
 
     stages {
