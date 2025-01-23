@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         REGISTRY = 'docker.io'                                // DockerHub registry
-        REPO = 'dinesh2001v'                                  // Your DockerHub repo
+        REPO = 'dinesh2001v/todo'                                  // Your DockerHub repo
         IMAGE = "${REGISTRY}/${REPO}:${env.BUILD_NUMBER}"     // Full Docker image tag
     }
 
